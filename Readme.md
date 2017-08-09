@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Kristina Meshcheryakova](https://up.htmlacademy.ru/htmlcss/18/user/290591).
-* Наставник: `Неизвестно`.
+* Наставник: Max Pushkarev.
 
 ---
 
