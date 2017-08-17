@@ -5,150 +5,205 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body>
+  <div class="page-inner">
     <header class="main-header">
       <div class="main-logo">
-        <a class="main-logo__link" href="index.html">
+        <a class="main-logo__link">
           <img class="main-logo__img" src="http://placehold.it/154x72" width="154" height="72" alt="Логотип магазина «Глейси»">
         </a>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="nav-link" href="catalog.html">Каталог</a></li>
-          <li class="main-nav__item"><a class="nav-link" href="Delivery.html">Доставка и оплата</a></li>
-          <li class="main-nav__item"><a class="nav-link" href="Info.html">О компании</a></li>
+          <li class="main-nav__item"><a class="nav-link" href="delivery.html">Доставка и оплата</a></li>
+          <li class="main-nav__item"><a class="nav-link" href="info.html">О компании</a></li>
         </ul>
       </nav>
       <div class="user-nav">
         <ul class="user-nav__list">
-          <li class="user-nav__item"></li>
-          <li class="user-nav__item">Вход</li>
-          <li class="user-nav__item">Пусто</li>
+          <li class="user-nav__item">
+            <button class="btn btn--nav" type="button">
+              <img class="user-nav__img" src="http://placehold.it/10x10" width="10" height="10" alt="img">
+            </button>
+          </li>
+          <li class="user-nav__item">
+            <button class="btn btn--nav" type="button">
+              <img class="user-nav__img" src="http://placehold.it/10x10" width="10" height="10" alt="img">Вход
+            </button>
+          </li >
+          <li class="user-nav__item">
+            <button class="btn btn--nav" type="button">
+              <img class="user-nav__img" src="http://placehold.it/10x10" width="10" height="10" alt="img">Пусто
+            </button>
+          </li>
         </ul>
       </div>
       <section class="header-phones">
-        <h2 class="header-phones__title--visually-hidden">Телефон для заказа</h2>
+        <h2 class="visually-hidden">Телефон для заказа</h2>
         <p class="header-phones__info">
-          С 10 до 20, ежедневно<br>
+          С 10 до 20, ежедневно
           8 812 450-25-25
         </p>
       </section>
     </header>
 
     <main class="catalog">
-      <h1 class="catalog__title">Сливочное мороженное</h1>
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__items"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
-        <li class="breadcrumbs__items"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
-        <li class="breadcrumbs__itemst">Сливочное</li>
-      </ul>
+      <div class="catalog__nav">
+        <h1 class="catalog__title">Сливочное мороженное</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__items"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__items"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs__items">Сливочное</li>
+        </ul>
+      </div>
 
-      <section class="catalog-filters">
-        <h2 class="catalog-filters__title--visually-hidden">Сортировка</h2>
-        <form class="catalog-filters__form" action="https://echo.htmlacademy.ru" method="get">
+      <section class="filters">
+        <h2 class="visually-hidden">Сортировка</h2>
+        <form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
+        <div class="filters__bar">
           <p>Сортировка</p>
           <p>Цена</p>
           <p>Жирность</p>
+        </div>
+        <div class="filters__bar">
           <p>Наполнители</p>
           <button type="submit" class="btn btn--white">Применить</button>
+        </div>
         </form>
       </section>
 
       <section class="goods">
-        <h2 class="goods__title--visually-hidden">Каталог мороженного</h2>
+        <h2 class="visually-hidden">Каталог мороженного</h2>
         <ul class="goods-list">
           <li class="goods-list__item">
             <img class="goods-list__img" src="http://placehold.it/267x267" width="267" height="267" alt="Мороженное">
             <p class="goods-list__price">310<span>/кг</span></p>
             <a class="goods-list__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            <div class="btn-wrapper">
+              <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            </div>
           </li>
           <li class="goods-list__item">
             <img class="goods-list__img" src="http://placehold.it/267x267" width="267" height="267" alt="Мороженное">
             <p class="goods-list__price">380<span>/кг</span></p>
             <a class="goods-list__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
-            <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            <div class="btn-wrapper">
+              <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            </div>
           </li>
           <li class="goods-list__item">
             <img class="goods-list__img" src="http://placehold.it/267x267" width="267" height="267" alt="Мороженное">
             <p class="goods-list__price">355<span>/кг</span></p>
             <a class="goods-list__link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-            <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            <div class="btn-wrapper">
+              <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            </div>
           </li>
           <li class="goods-list__item">
             <img class="goods-list__img" src="http://placehold.it/267x267" width="267" height="267" alt="Мороженное">
             <p class="goods-list__price">415<span>/кг</span></p>
             <a class="goods-list__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
-            <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            <div class="btn-wrapper">
+              <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            </div>
           </li>
           <li class="goods-list__item">
             <img class="goods-list__img" src="http://placehold.it/267x267" width="267" height="267" alt="Мороженное">
             <p class="goods-list__price">325<span>/кг</span></p>
             <a class="goods-list__link" href="#">Сливочное с брусничным джемом</a>
-            <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            <div class="btn-wrapper">
+              <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            </div>
           </li>
           <li class="goods-list__item">
             <img class="goods-list__img" src="http://placehold.it/267x267" width="267" height="267" alt="Мороженное">
             <p class="goods-list__price">410<span>/кг</span></p>
             <a class="goods-list__link" href="#">Сливочно-черничное с цельными ягодами черники</a>
-            <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            <div class="btn-wrapper">
+              <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            </div>
           </li>
           <li class="goods-list__item">
             <img class="goods-list__img" src="http://placehold.it/267x267" width="267" height="267" alt="Мороженное">
             <p class="goods-list__price">375<span>/кг</span></p>
             <a class="goods-list__link" href="#">Сливочно-лимонное с карамельной присыпкой</a>
-            <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            <div class="btn-wrapper">
+              <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            </div>
           </li>
           <li class="goods-list__item">
             <img class="goods-list__img" src="http://placehold.it/267x267" width="267" height="267" alt="Мороженное">
             <p class="goods-list__price">320<span>/кг</span></p>
             <a class="goods-list__link" href="#">Сливочное с шоколадной стружкой</a>
-            <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            <div class="btn-wrapper">
+              <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            </div>
           </li>
           <li class="goods-list__item">
             <img class="goods-list__img" src="http://placehold.it/267x267" width="267" height="267" alt="Мороженное">
             <p class="goods-list__price">440<span>/кг</span></p>
             <a class="goods-list__link" href="#">Сливочно-ванильное с кусочками шоколада</a>
-            <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            <div class="btn-wrapper">
+              <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            </div>
           </li>
           <li class="goods-list__item">
             <img class="goods-list__img" src="http://placehold.it/267x267" width="267" height="267" alt="Мороженное">
             <p class="goods-list__price">435<span>/кг</span></p>
             <a class="goods-list__link" href="#">Сливочноe с ментоловым сиропом</a>
-            <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            <div class="btn-wrapper">
+              <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            </div>
           </li>
           <li class="goods-list__item">
             <img class="goods-list__img" src="http://placehold.it/267x267" width="267" height="267" alt="Мороженное">
             <p class="goods-list__price">355<span>/кг</span></p>
             <a class="goods-list__link" href="#">Сливочное с кусочками черного шоколада</a>
-            <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            <div class="btn-wrapper">
+              <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            </div>
           </li>
           <li class="goods-list__item">
             <img class="goods-list__img" src="http://placehold.it/267x267" width="267" height="267" alt="Мороженное">
             <p class="goods-list__price">420<span>/кг</span></p>
             <a class="goods-list__link" href="#">Сливочное с мятным сиропом</a>
-            <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            <div class="btn-wrapper">
+              <a class="btn btn--orange btn--small" href="#">Быстрый просмотр</a>
+            </div>
           </li>
         </ul>
       </section>
       <div class="pagination">
         <ul class="pagination__list">
+          <li class="pagination__item">
+            <button class="pagination__btn" type="button">&lt;</button>
+          </li>
           <li class="pagination__item pagination__item--current">1</li>
           <li class="pagination__item"><a href="#">2</a></li>
           <li class="pagination__item"><a href="#">3</a></li>
           <li class="pagination__item"><a href="#">4</a></li>
           <li class="pagination__item"><a href="#">5</a></li>
+          <li class="pagination__item">
+            <button class="pagination__btn" type="button">&gt;</button>
+          </li>
         </ul>
-        <input class="pagination__control" type="button" value="<">
-        <input class="pagination__control" type="button" value=">">
       </div>
     </main>
     <footer class="main-footer">
       <div class="footer-social">
         <ul class="footer-social__list">
-          <li class="footer-social__item"><a class="social-button" href="#">Твиттер</a></li>
-          <li class="footer-social__item"><a class="social-button" href="#">Инстаграм</a></li>
-          <li class="footer-social__item"><a class="social-button" href="#">Фейсбук</a></li>
-          <li class="footer-social__item"><a class="social-button" href="#">Вконтакте</a></li>
+          <li class="footer-social__item footer-social__item--img_1">
+            <a class="social-button" href="#">Твиттер</a>
+          </li>
+          <li class="footer-social__item footer-social__item--img_2">
+            <a class="social-button" href="#">Инстаграм</a>
+          </li>
+          <li class="footer-social__item footer-social__item--img_3">
+            <a class="social-button" href="#">Фейсбук</a>
+          </li>
+          <li class="footer-social__item footer-social__item--img_4">
+            <a class="social-button" href="#">Вконтакте</a>
+          </li>
         </ul>
       </div>
       <div class="footer-nav">
@@ -170,5 +225,6 @@
         </p>
       </div>
     </footer>
+  </div>
   </body>
 </html>
