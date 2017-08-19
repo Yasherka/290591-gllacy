@@ -1,0 +1,19 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #323232;
+}
+.main-slider__title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.main-promo__item-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+  color: #ffffff;
+}
