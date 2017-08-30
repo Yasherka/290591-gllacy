@@ -1,19 +1,330 @@
 body {
+  margin: 0;
+  padding: 0;
+
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
   font-weight: 400;
   color: #323232;
+
+  background-color: #849d8f;
 }
+.btn {
+  font: inherit;
+  color: #ffffff;
+
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+
+  border: none;
+}
+
+.btn--orange {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+
+  background-color: #e74a35;
+}
+
+.btn--orange:hover,
+.btn--orange:focus {
+  background-color: #ec6f5e;
+}
+
+.btn--orange:active {
+  background-color: #e74a35;
+}
+
+.btn--big {
+  font-size: 32px;
+  line-height: 44px;
+}
+.main-nav {
+  background-color: #849d8f;
+}
+
+.main-nav__list,
+.user-nav__list {
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #333333;
+  background-color: #f8f7f4;
+  text-decoration: none;
+}
+
+.user-nav a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.user-nav a:hover,
+.user-nav a:focus {
+  font-weight:500;
+  color: #333333;
+  background-color: #f8f7f4;
+}
+
+.header-phones {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.header-phones b {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.main-slider__list {
+  list-style: none;
+}
+
+.main-slider__item {
+  text-align: center;
+}
+
 .main-slider__title {
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
   color: #ffffff;
 }
+
+.main-promo__list {
+  list-style: none;
+}
+
+.main-promo__item {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-repeat: no-repeat;
+}
+
+.main-promo__item--raspberry {
+  background-color: #c36085;
+  background-image: url("../img/raspberry.jpg");
+}
+
+.main-promo__item--chocolate {
+  background-color: #7a5e58;
+  background-image: url("../img/choco.jpg");
+}
+
 .main-promo__item-title {
   font-size: 35px;
   line-height: 41px;
+}
+
+.goods-list {
+  list-style: none;
+}
+
+.goods-list__price {
+  font-size: 45px;
+  line-height: 45px;
   font-weight: 700;
   color: #ffffff;
+}
+
+.goods-list__price span {
+  font-size: 35px;
+}
+
+.goods-list__link {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.features {
+  background-color: #ecdec6;
+  background-image: url("../img/waffle.jpg");
+}
+
+.features b {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.features__item {
+  list-style: none;
+}
+
+.gllasy-blog {
+  background-color: #ffffff;
+  background-image: url("../img/blog.jpg");
+  background-repeat: no-repeat;
+}
+
+.gllasy-blog__info {
+  font-weight: 500;
+}
+
+.gllasy-blog__link {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.subscribe {
+  background-color: #ffffff;
+  background-image: url("../img/bg-post.svg");
+  background-repeat: no-repeat;
+}
+
+.subscribe__info {
+  color: #5a5a5a;
+}
+
+.feedback {
+  background-color: #ffffff;
+}
+
+.feedback__info {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.feedback__info b {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.main-footer {
+  background-color: #849d8f;
+}
+
+.footer-social__list {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.footer-nav__list {
+  list-style: none;
+}
+
+.footer-nav__link {
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-nav__link:hover,
+.footer-nav__link:focus {
+  color: #ffbc9e;
+}
+
+.footer-nav__link b {
+  font-weight: 700;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.footer-copyright__link {
+  color: #ffffff;
+}
+
+.footer-copyright__link:hover,
+.footer-copyright__link:focus {
+  color: #ffbc9e;
+}
+
+.modal {
+  background-color: #f8f7f4;
+}
+
+.modal__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.modal input[type="text"],
+.modal input[type="password"],
+.modal textarea {
+  background-color: #ffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
+.modal input:hover,
+.modal input:focus,
+.modal textarea:hover,
+.modal textarea:focus {
+  border: 2px solid rgba(178, 178, 178, 0.52);
+}
+
+.modal input:active,
+.modal textarea:active {
+  border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+.modal-search__form{
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.modal-search__input {
+  font: inherit;
+}
+
+.modal-login__form {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.modal-login__name,
+.modal-login__password {
+  font: inherit;
+}
+
+.modal-login__link {
+  font-size: 13px;
+  line-height: 24px;
+  color: #323232;
+}
+
+.modal-login__link:hover,
+.modal-login__link:focus {
+  color: #e84d37;
+}
+
+.modal-feedback__form {
+  line-height: 24px;
+}
+
+.modal-feedback__name,
+.modal-feedback__email,
+.modal-feedback__text {
+  font: inherit;
 }
