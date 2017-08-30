@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -14,7 +17,7 @@
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+            <li class="main-nav__item"><a class="nav-link nav-link--current" href="catalog.html">Каталог</a></li>
             <li class="main-nav__item"><a class="nav-link" href="delivery.html">Доставка и оплата</a></li>
             <li class="main-nav__item"><a class="nav-link" href="info.html">О компании</a></li>
           </ul>
@@ -36,7 +39,7 @@
           <h2 class="visually-hidden">Телефон для заказа</h2>
           <p class="header-phones__info">
             С 10 до 20, ежедневно
-            8 812 450-25-25
+            <b>8 812 450-25-25</b>
           </p>
         </section>
       </div>
@@ -47,9 +50,9 @@
         <div class="catalog__nav">
           <h1 class="catalog__title">Сливочное мороженое</h1>
           <ul class="breadcrumbs">
-            <li class="breadcrumbs__items"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
-            <li class="breadcrumbs__items"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
-            <li class="breadcrumbs__items">Сливочное</li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link breadcrumbs__link--current" href="#">Сливочное</a></li>
           </ul>
         </div>
 
@@ -67,8 +70,10 @@
               </div>
               <div class="filters__wrap">
                 <p class="filters__title">Цена:</p>
-                <label class="visually-hidden" for="filter-price">Выберите диапазон</label>
-                <input class="filters__price" type="range" min="100" max="500" step="1" id="filter-price" name="filter-price" value="300">
+                <div class="filters__back">
+                  <label class="visually-hidden" for="filter-price">Выберите диапазон</label>
+                  <input class="filters__price" type="range" min="100" max="500" step="1" id="filter-price" name="filter-price" value="300">
+                </div>
               </div>
               <div class="filters__wrap">
                 <p class="filters__title">Жирность:</p>
@@ -228,9 +233,9 @@
         <div class="pagination">
           <ul class="pagination__list">
             <li class="pagination__item">
-              <button class="pagination__btn pagination__btn--back" type="button">Назад</button>
+              <button class="pagination__btn pagination__btn--back pagination__btn--off" type="button">Назад</button>
             </li>
-            <li class="pagination__item pagination__item--current">1</li>
+            <li class="pagination__item pagination__item--current"><a href="#">1</a></li>
             <li class="pagination__item"><a href="#">2</a></li>
             <li class="pagination__item"><a href="#">3</a></li>
             <li class="pagination__item"><a href="#">4</a></li>
