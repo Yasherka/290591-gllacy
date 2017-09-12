@@ -391,7 +391,9 @@ input[type="radio"].visually-hidden {
 
 .user-link--cart {
   min-width: 85px;
+}
 
+.user-link--cartfull {
   font-weight:500;
   color: #333333;
   background-color: #f8f7f4;
@@ -874,9 +876,9 @@ input[type="radio"].visually-hidden {
 }
 
 .main-map {
-  margin: 0 auto;
+  position: relative;
 
-  background-color: #ffffff;
+  background-color: #849d8f;
   background-image: url("../img/map.png");
   background-position: 50% 0;
   background-repeat: no-repeat;
@@ -884,8 +886,14 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-.main-map .container {
-  position: relative;
+.map-wrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .feedback {
