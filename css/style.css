@@ -200,7 +200,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.main-nav__item:hover .sub-nav  {
+.main-nav__item:hover .sub-nav {
   display: block;
 }
 
@@ -395,8 +395,7 @@ input[type="radio"].visually-hidden {
   fill: #333333;
 }
 
-.user-nav__item--search:hover .modal-search,
-.user-nav__item--search:focus .modal-search {
+.user-nav__item--search:hover .modal-search {
   display: block;
 }
 
@@ -1530,7 +1529,7 @@ input[type="radio"].visually-hidden {
   background-image: linear-gradient(to right, rgba(232, 77, 55, 0.3), rgba(232, 77, 55, 0.3));
 }
 
-.modal-search:hover + .user-link--search
+.modal-search:hover + .user-link--search,
 .modal-login:hover + .user-link--login,
 .modal-cart:hover + .user-link--cart {
  font-weight:500;
