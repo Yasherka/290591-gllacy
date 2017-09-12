@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="body-catalog">
     <div class="catalog-wrapper">
       <header class="main-header">
         <div class="container">
@@ -180,7 +180,9 @@
                   <label class="visually-hidden" for="filter-sort">Способ cортировки</label>
                   <select class="filters__sort filters__background" id="filter-sort" name="filter-sort">
                     <option value="sort-pop">по популярности</option>
-                    <option value="sort-price">по названию</option>
+                    <option value="sort-price">сначала недорогие</option>
+                    <option value="sort-price">сначала дорогие</option>
+                    <option value="sort-price">по жирности</option>
                   </select>
                   <svg class="select-arrow" xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5">
                     <path d="M4.5 5L0 0h9z"/>

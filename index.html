@@ -8,6 +8,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="overlay">Overlay</div>
+
     <input class="visually-hidden" type="radio" name="slider-nav" id="slider-nav_1" checked>
     <input class="visually-hidden" type="radio" name="slider-nav" id="slider-nav_2">
     <input class="visually-hidden" type="radio" name="slider-nav" id="slider-nav_3">
@@ -298,23 +300,20 @@
 
       <section class="main-map">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <div id="map"></div>
-        <div class="map-wrapper">
-          <img class="main-map__img" src="img/map.png" width="1200" height="430" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-          <div class="container">
-            <div class="feedback">
-              <p class="feedback__info">
-                Адрес главного офиса<br>
-                и офлайн магазина:
-                <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-              </p>
-              <p class="feedback__info">
-                Для заказов по телефону:
-                <b>8 812 450-25-25</b>
-                (с 10 до 20 ежедневно)
-              </p>
-              <button class="feedback__btn btn btn--orange" type="button">Форма обратной связи</button>
-            </div>
+        <div id="map" class="map"></div>
+        <div class="container">
+          <div class="feedback">
+            <p class="feedback__info">
+              Адрес главного офиса<br>
+              и офлайн магазина:
+              <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+            </p>
+            <p class="feedback__info">
+              Для заказов по телефону:
+              <b>8 812 450-25-25</b>
+              (с 10 до 20 ежедневно)
+            </p>
+            <button class="feedback__btn btn btn--orange" type="button">Форма обратной связи</button>
           </div>
         </div>
       </section>
@@ -414,5 +413,8 @@
     </form>
     <button class="modal-close" type="button">Закрыть</button>
   </section>
+
+  <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/script.js"></script>
   </body>
 </html>

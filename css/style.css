@@ -160,8 +160,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   flex-direction: row;
-
-  z-index: 100;
 }
 
 .main-logo {
@@ -496,7 +494,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   bottom: 21px;
   left: 0;
-  z-index: 20;
+  z-index: 1;
 
   font-size: 0;
 }
@@ -710,7 +708,7 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
 
-  z-index: 10;
+  z-index: 2;
 }
 
 .features {
@@ -870,13 +868,24 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
 }
 
-.map-wrapper {
-  position: relative;
+.map {
+  width: 100%;
+  height: 430px;
+}
+
+.main-map {
   margin: 0 auto;
-  width: 1200px;
-  min-height: 430px;
+
+  background-color: #ffffff;
+  background-image: url("../img/map.png");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
 
   text-align: center;
+}
+
+.main-map .container {
+  position: relative;
 }
 
 .feedback {
@@ -926,7 +935,6 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-wrapper {
-  width: 1200px;
   margin: 0 auto;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0) 600px);
 }
@@ -1744,6 +1752,8 @@ input[type="radio"].visually-hidden {
 
   width: 430px;
   border-radius: 8px;
+
+  z-index: 11;
 }
 
 .modal-feedback__title {
@@ -1775,6 +1785,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   min-height: 155px;
 }
+
 .modal-close {
   position: absolute;
   top: 13px;
@@ -1811,4 +1822,36 @@ input[type="radio"].visually-hidden {
 
 .modal-close::after {
   transform: rotate(-45deg);
+}
+
+.sub-nav::before,
+.modal-search::before,
+.modal-login::before,
+.modal-cart::before {
+  content: "";
+
+  position: absolute;
+  top: -4px;
+  right: 0;
+
+  height: 4px;
+  width: 140px;
+
+  background-color: transparent;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: none;
+
+  font-size: 0;
+
+  background-color: rgba(0, 0, 0, 0.3);
+
+  z-index: 10;
 }
