@@ -160,6 +160,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   align-items: center;
   flex-direction: row;
+
+  z-index: 1;
 }
 
 .main-logo {
@@ -1862,4 +1864,8 @@ input[type="radio"].visually-hidden {
   background-color: rgba(0, 0, 0, 0.3);
 
   z-index: 10;
+}
+
+.modal-show {
+  display: block;
 }
