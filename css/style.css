@@ -952,6 +952,18 @@ input[type="radio"].visually-hidden {
   border-radius: 5px;
 }
 
+.subscribe__input:hover {
+  -webkit-box-shadow: inset 0 0 1px 1px rgba(178, 178, 178, 0.52);
+          box-shadow: inset 0 0 1px 1px rgba(178, 178, 178, 0.52);
+}
+
+.subscribe__input:active,
+.subscribe__input:focus {
+  border: 1px solid rgba(46, 136, 228, 0.52);
+  -webkit-box-shadow: inset 0 0 1px 1px rgba(46, 136, 228, 0.52);
+          box-shadow: inset 0 0 1px 1px rgba(46, 136, 228, 0.52);
+}
+
 .map {
   width: 100%;
   height: 430px;
@@ -1020,10 +1032,6 @@ input[type="radio"].visually-hidden {
 
 .feedback__info:last-of-type {
   margin-bottom: 26px;
-}
-
-.feedback__btn {
-  width: 100%;
 }
 
 .catalog-wrapper {
@@ -1671,6 +1679,8 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-form__wrap {
+  position: relative;
+
   margin: 0;
   margin-bottom: 21px;
   padding: 0;
@@ -1692,8 +1702,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal input:hover,
-.modal textarea:hover,
-.modal textarea:focus {
+.modal textarea:hover {
   -webkit-box-shadow: inset 0 0 1px 1px rgba(178, 178, 178, 0.52);
           box-shadow: inset 0 0 1px 1px rgba(178, 178, 178, 0.52);
 }
@@ -1732,6 +1741,10 @@ input[type="radio"].visually-hidden {
   padding: 9px 12px;
 
   width: 100%;
+}
+
+.modal-search .modal-form__wrap {
+  margin-bottom: 0;
 }
 
 .modal-login {
@@ -1847,7 +1860,6 @@ input[type="radio"].visually-hidden {
   padding-left: 73px;
 
   -webkit-box-sizing: border-box;
-
           box-sizing: border-box;
 }
 
@@ -2067,6 +2079,113 @@ input[type="radio"].visually-hidden {
   z-index: 10;
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  70% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  90% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  70% {
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  90% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 .modal-show {
   display: block;
+}
+
+.modal-animation {
+  display: block;
+
+  -webkit-animation: bounce 0.5s;
+          animation: bounce 0.5s;
+}
+
+.jump_label {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+
+  display: none;
+
+  font-size: 11px;
+  line-height: 13px;
+  color: #5b9ddf;
+}
+
+.subscribe__input:focus + .jump_label,
+.modal-search__input:focus + .jump_label,
+.modal-login__name:focus  + .jump_label,
+.modal-login__password:focus  + .jump_label,
+.modal-feedback__name:focus + .jump_label,
+.modal-feedback__email:focus + .jump_label,
+.modal-feedback__text:focus + .jump_label {
+  display: block;
+}
+
+.subscribe__input:focus::-webkit-input-placeholder,
+.modal-search__input:focus::-webkit-input-placeholder,
+.modal-login__name:focus::-webkit-input-placeholder,
+.modal-login__password:focus::-webkit-input-placeholder,
+.modal-feedback__name:focus::-webkit-input-placeholder,
+.modal-feedback__email:focus::-webkit-input-placeholder,
+.modal-feedback__text:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.subscribe__input:focus::-moz-placeholder,
+.modal-search__input:focus::-moz-placeholder,
+.modal-login__name:focus::-moz-placeholder,
+.modal-login__password:focus::-moz-placeholder,
+.modal-feedback__name:focus::-moz-placeholder,
+.modal-feedback__email:focus::-moz-placeholder,
+.modal-feedback__text:focus::-moz-placeholder {
+  color: transparent;
+}
+
+.subscribe__input:focus:-moz-placeholder,
+.modal-search__input:focus:-moz-placeholder,
+.modal-login__name:focus:-moz-placeholder,
+.modal-login__password:focus:-moz-placeholder,
+.modal-feedback__name:focus:-moz-placeholder,
+.modal-feedback__email:focus:-moz-placeholder,
+.modal-feedback__text:focus:-moz-placeholder {
+  color: transparent;
+}
+
+.subscribe__input:focus:-ms-input-placeholder,
+.modal-search__input:focus:-ms-input-placeholder,
+.modal-login__name:focus:-ms-input-placeholder,
+.modal-login__password:focus:-ms-input-placeholder,
+.modal-feedback__name:focus:-ms-input-placeholder,
+.modal-feedback__email:focus:-ms-input-placeholder,
+.modal-feedback__text:focus:-ms-input-placeholder {
+  color: transparent;
 }

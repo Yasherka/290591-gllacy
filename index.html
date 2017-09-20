@@ -66,8 +66,10 @@
                     <section class="modal modal-search">
                       <h2 class="visually-hidden">Форма поиска</h2>
                       <form class="modal-search__form" action="https://echo.htmlacademy.ru" method="post">
-                        <label class="visually-hidden" for="modal-search">Что ищем?</label>
-                        <input class="modal-search__input" type="text" id="modal-search" name="modal-search" placeholder="Что ищем?">
+                        <p class="modal-form__wrap">
+                          <input class="modal-search__input" type="text" id="modal-search" name="modal-search" placeholder="Что ищем?">
+                          <label class="jump_label" for="modal-search">Что ищем?</label>
+                        </p>
                       </form>
                     </section>
                     <button class="btn user-link user-link--search" type="button">
@@ -82,12 +84,12 @@
                       <h2 class="visually-hidden">Личный кабинет</h2>
                       <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
                         <p class="modal-form__wrap">
-                          <label class="visually-hidden" for="login-name">Введите логин</label>
                           <input class="modal-login__name" type="text" id="login-name" name="login-name" placeholder="Электронная почта">
+                          <label class="jump_label" for="login-name">Электронная почта</label>
                         </p>
                         <p class="modal-form__wrap">
-                          <label class="visually-hidden" for="login-password">Введите пароль</label>
                           <input class="modal-login__password" type="password" id="login-password" name="login-password" placeholder="Пароль">
+                          <label class="jump_label" for="login-password">Пароль</label>
                         </p>
                         <div class="modal-login__info">
                           <p class="modal-login__wrap">
@@ -286,9 +288,11 @@
                   Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
                 </p>
                 <form class="subscribe__form" action="https://echo.htmlacademy.ru" method="post">
-                  <label class="visually-hidden" for="subscribe-email">Введите почту</label>
-                  <input class="subscribe__input" type="text" id="subscribe-email" name="subscribe-email"  placeholder="Электронная почта">
-                  <button class="btn btn--orange btn--sub" type="submit">Отправить</button>
+                  <p class="modal-form__wrap">
+                    <input class="subscribe__input" type="text" id="subscribe-email" name="subscribe-email"  placeholder="Электронная почта">
+                    <label class="jump_label" for="subscribe-email">Электронная почта</label>
+                    <button class="btn btn--orange btn--sub" type="submit">Отправить</button>
+                  </p>
                 </form>
               </div>
             </section>
@@ -314,7 +318,7 @@
                 <b>8 812 450-25-25</b>
                 (с 10 до 20 ежедневно)
               </p>
-              <button class="feedback__btn btn btn--orange" type="button">Форма обратной связи</button>
+              <a class="feedback__btn btn btn--orange" href="#">Форма обратной связи</a>
             </div>
           </div>
         </div>
@@ -398,16 +402,16 @@
     <p class="modal-feedback__title">Мы обязательно вам ответим!</p>
     <form class="modal-feedback__form" action="https://echo.htmlacademy.ru" method="post">
       <p class="modal-form__wrap">
-        <label class="visually-hidden" for="feedback-name">Введите имя</label>
         <input class="modal-feedback__name" type="text" id="feedback-name" name="feedback-name" placeholder="Как вас зовут?">
+        <label class="jump_label" for="feedback-name">Как вас зовут?</label>
       </p>
       <p class="modal-form__wrap">
-        <label class="visually-hidden" for="feedback-email">Введите почту</label>
         <input class="modal-feedback__email" type="text" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?">
-        <label class="visually-hidden" for="feedback-text">Напишите что-нибудь</label>
+        <label class="jump_label" for="feedback-email">Ваша почта для ответа?</label>
       </p>
       <p class="modal-form__wrap">
         <textarea class="modal-feedback__text" id="feedback-text" name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
+        <label class="jump_label" for="feedback-text">Напишите что-нибудь</label>
       </p>
       <p class="modal-form__wrap modal-form__wrap--btn">
         <button class="btn btn--orange" type="submit">Отправить</button>

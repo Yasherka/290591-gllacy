@@ -60,8 +60,10 @@
                     <section class="modal modal-search">
                       <h2 class="visually-hidden">Форма поиска</h2>
                       <form class="modal-search__form" action="https://echo.htmlacademy.ru" method="post">
-                        <label class="visually-hidden" for="modal-search">Что ищем?</label>
-                        <input class="modal-search__input" type="text" id="modal-search" name="modal-search" placeholder="Что ищем?">
+                        <p class="modal-form__wrap">
+                          <input class="modal-search__input" type="text" id="modal-search" name="modal-search" placeholder="Что ищем?">
+                          <label class="jump_label" for="modal-search">Что ищем?</label>
+                        </p>
                       </form>
                     </section>
                     <button class="btn user-link user-link--search" type="button">
@@ -76,12 +78,12 @@
                       <h2 class="visually-hidden">Личный кабинет</h2>
                       <form class="modal-login__form" action="https://echo.htmlacademy.ru" method="post">
                         <p class="modal-form__wrap">
-                          <label class="visually-hidden" for="login-name">Введите логин</label>
                           <input class="modal-login__name" type="text" id="login-name" name="login-name" placeholder="Электронная почта">
+                          <label class="jump_label" for="login-name">Электронная почта</label>
                         </p>
                         <p class="modal-form__wrap">
-                          <label class="visually-hidden" for="login-password">Введите пароль</label>
                           <input class="modal-login__password" type="password" id="login-password" name="login-password" placeholder="Пароль">
+                          <label class="jump_label" for="login-password">Пароль</label>
                         </p>
                         <div class="modal-login__info">
                           <p class="modal-login__wrap">
